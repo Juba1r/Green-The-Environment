@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base Neutral Backgrounds */
+    --background: 210 20% 98%;
+    --foreground: 220 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    /* Emotion Colors */
+    --primary: 142 76% 36%; /* Care (Vibrant Green) */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 47 95% 50%; /* Hope (Warm Gold) */
+    --secondary-foreground: 220 20% 15%;
+
+    --accent: 199 89% 48%; /* Trust (Bright Blue) */
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 210 20% 94%;
+    --muted-foreground: 215 16% 47%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 142 76% 36%;
+    --radius: 1.5rem; /* More modern, rounded */
+
+    /* Semantic Emotions */
+    --trust: 199 89% 48%;
+    --care: 142 76% 36%;
+    --hope: 47 95% 50%;
+  }
+
+  .dark {
+    --background: 145 30% 4%; /* Very deep forest black */
+    --foreground: 140 20% 98%;
+
+    --card: 145 30% 6%;
+    --card-foreground: 140 20% 98%;
+
+    --popover: 145 30% 6%;
+    --popover-foreground: 140 20% 98%;
+
+    --primary: 142 70% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 47 95% 50%;
+    --secondary-foreground: 220 20% 15%;
+
+    --accent: 199 89% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 145 20% 15%;
+    --muted-foreground: 140 10% 65%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 140 20% 98%;
+
+    --border: 145 20% 15%;
+    --input: 145 20% 15%;
+    --ring: 142 70% 45%;
+
+    --trust: 199 89% 48%;
+    --care: 142 70% 45%;
+    --hope: 47 95% 50%;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground tracking-normal;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Glassmorphism */
+  .glass {
+    @apply bg-white/70 dark:bg-black/70 backdrop-blur-xl border border-white/20 dark:border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.05)];
+  }
+
+  .glass-card {
+    @apply bg-white/90 dark:bg-black/90 backdrop-blur-md border border-white/20 dark:border-white/10 shadow-[0_12px_40px_-12px_rgba(0,0,0,0.1)] rounded-2xl;
+  }
+
+  /* Soft Gradients */
+  .bg-gradient-soft {
+    @apply bg-gradient-to-br from-primary/10 via-background to-accent/10;
+  }
+
+  /* Text Gradients */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r;
+  }
+}
+
+/* Lenis Recommended global styles */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
