@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Privacy Policy | Green The Environment',
-  description: 'How we handle your data and protect your privacy.',
+  title: "Privacy Policy | Forestry Reserve",
+  description: "How we handle your data and protect your privacy.",
 };
 
 export default function PrivacyPage() {
@@ -10,11 +10,20 @@ export default function PrivacyPage() {
       <div className="prose prose-lg dark:prose-invert max-w-none">
         <p>Last Updated: February 2026</p>
         <h2>1. Information We Collect</h2>
-        <p>Personal information you provide to us when you donate, volunteer, or contact us.</p>
+        <p>
+          Personal information you provide to us when you donate, volunteer, or
+          contact us.
+        </p>
         <h2>2. How We Use Information</h2>
-        <p>To process donations, coordinate volunteer efforts, and improve our platform.</p>
+        <p>
+          To process donations, coordinate volunteer efforts, and improve our
+          platform.
+        </p>
         <h2>3. Data Security</h2>
-        <p>We use industry-standard encryption to protect your financial and personal data.</p>
+        <p>
+          We use industry-standard encryption to protect your financial and
+          personal data.
+        </p>
       </div>
     </div>
   );

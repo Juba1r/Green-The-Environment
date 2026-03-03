@@ -1,6 +1,7 @@
 export const metadata = {
-  title: 'Terms of Service | Green The Environment',
-  description: 'The terms and conditions for using the Green The Environment platform.',
+  title: "Terms of Service | Forestry Reserve",
+  description:
+    "The terms and conditions for using the Forestry Reserve platform.",
 };
 
 export default function TermsPage() {
@@ -12,7 +13,10 @@ export default function TermsPage() {
         <h2>1. Acceptance of Terms</h2>
         <p>By using our platform, you agree to these legal terms.</p>
         <h2>2. Donation Refunds</h2>
-        <p>Donations are generally non-refundable unless a clerical error occurred.</p>
+        <p>
+          Donations are generally non-refundable unless a clerical error
+          occurred.
+        </p>
         <h2>3. Volunteer Conduct</h2>
         <p>Volunteers must adhere to our code of ethics and integrity.</p>
       </div>

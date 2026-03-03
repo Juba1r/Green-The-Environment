@@ -1,8 +1,9 @@
-import { DonateForm } from '@/components/forms/DonateForm';
+import { DonateForm } from "@/components/forms/DonateForm";
 
 export const metadata = {
-  title: 'Donate | Green The Environment Platform',
-  description: 'Make a donation to help us secure a sustainable future.',
+  title: "Donate | Forestry Reserve Platform",
+  description:
+    "Make a donation to help us preserve our forests for future generations.",
 };
 
 export default function DonatePage() {
@@ -13,9 +14,10 @@ export default function DonatePage() {
           Support Our Mission
         </h1>
         <p className="text-center text-muted-foreground text-lg mb-12 max-w-xl mx-auto">
-          Your giving helps us plant more trees, protect the oceans, and provide clean water to those in need. Choose an amount to give today.
+          Your giving helps us plant more trees, protect critical habitats, and
+          restore forest ecosystems. Choose an amount to give today.
         </p>
-        
+
         <div className="bg-card shadow-2xl shadow-primary/5 rounded-3xl p-8 border border-border">
           <DonateForm />
         </div>
