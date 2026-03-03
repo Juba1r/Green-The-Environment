@@ -34,7 +34,7 @@ export function AboutHero() {
           className="text-xl text-muted-foreground max-w-3xl leading-relaxed"
         >
           Forestry Reserve is a dedicated organization focused on preserving the
-          world's forests, rehabilitating ecosystems, and fostering a deep
+          world&apos;s forests, rehabilitating ecosystems, and fostering a deep
           connection between humanity and the woods.
         </motion.p>
       </div>

@@ -19,8 +19,8 @@ export function Footer() {
             </Link>
             <p className="text-muted-foreground text-sm font-sans leading-relaxed">
               Forestry Reserve is a dedicated organization focused on preserving
-              the world's forests, rehabilitating ecosystems, and fostering a
-              deep connection between humanity and the woods.
+              the world&apos;s forests, rehabilitating ecosystems, and fostering
+              a deep connection between humanity and the woods.
             </p>
             <div className="flex gap-4">
               <Button

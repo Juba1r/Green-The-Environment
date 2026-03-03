@@ -2,13 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  Newspaper,
-  ArrowRight,
-  Calendar,
-  ExternalLink,
-  RefreshCw,
-} from "lucide-react";
+import { Newspaper, ArrowRight, Calendar, RefreshCw } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";

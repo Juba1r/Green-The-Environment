@@ -105,7 +105,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="font-sans text-lg md:text-2xl text-white/70 max-w-3xl mb-12 leading-relaxed"
         >
-          Forestry Reserve is dedicated to preserving the world's forests,
+          Forestry Reserve is dedicated to preserving the world&apos;s forests,
           rehabilitating ecosystems, and fostering a deep connection between
           humanity and the woods through innovative conservation programs.
         </motion.p>
