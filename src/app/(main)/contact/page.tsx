@@ -1,15 +1,16 @@
-'use client';
+"use client";
 
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 export default function ContactPage() {
   return (
     <div className="pt-32 pb-20 px-6 max-w-7xl mx-auto min-h-screen">
       <h1 className="font-heading text-5xl font-bold mb-6">Contact Us</h1>
       <p className="text-xl text-muted-foreground mb-12 max-w-2xl">
-        Have questions about our initiatives, or want to partner with us? Our global team is ready to connect.
+        Have questions about our initiatives, or want to partner with us? Our
+        global team is ready to connect.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -25,12 +26,15 @@ export default function ContactPage() {
             </div>
             <div className="space-y-2">
               <Label>Message</Label>
-              <textarea 
+              <textarea
                 className="w-full min-h-[150px] p-3 rounded-xl border border-input bg-background focus:ring-2 focus:ring-primary focus:outline-none resize-none"
                 placeholder="How can we help?"
               />
             </div>
-            <Button type="button" className="w-full bg-primary hover:bg-primary/90 text-white">
+            <Button
+              type="button"
+              className="w-full bg-primary hover:bg-primary/90 text-white"
+            >
               Send Message
             </Button>
           </form>
@@ -38,21 +42,33 @@ export default function ContactPage() {
 
         <div className="space-y-8">
           <div>
-            <h3 className="font-heading text-2xl font-bold mb-2">Head Office</h3>
+            <h3 className="font-heading text-2xl font-bold mb-2">
+              Head Office
+            </h3>
             <p className="text-muted-foreground">
-              House# 14, Road# 12, PC Culture Housing Society<br/>
-              Block: Kha, Shekhertek, Adabor<br/>
-              Mohammadpur, Dhaka-1207 Bangladesh
+              123 Pine Forest Way, Evergreen Valley
+              <br />
+              OR 97401, United States
             </p>
           </div>
           <div>
             <h3 className="font-heading text-2xl font-bold mb-2">Connect</h3>
             <div className="text-muted-foreground space-y-1">
-              <p><strong>General Inquiries:</strong> Info@greentheenvironment.org</p>
-              <p><strong>Safeguarding:</strong> Safe.gourding@greentheenvironment.org</p>
-              <p><strong>Compliance:</strong> Compliance@greentheenvironment.org</p>
-              <p><strong>PSEA Focal Point:</strong> psea.focal@greentheenvironment.org</p>
-              <p><strong>Phone:</strong> +02222245638</p>
+              <p>
+                <strong>General Inquiries:</strong> hello@forestryreserve.demo
+              </p>
+              <p>
+                <strong>Support:</strong> woodland.care@forestryreserve.demo
+              </p>
+              <p>
+                <strong>Partnerships:</strong> roots@forestryreserve.demo
+              </p>
+              <p>
+                <strong>Field Ops:</strong> rangers@forestryreserve.demo
+              </p>
+              <p>
+                <strong>Phone:</strong> +1 (555) 432-PINE
+              </p>
             </div>
           </div>
         </div>

@@ -5,9 +5,9 @@ import { LiveNewsSection } from "@/components/sections/LiveNewsSection";
 import { CTASection } from "@/components/sections/CTASection";
 
 export const metadata = {
-  title: "Green The Environment | A Global NGO Platform",
+  title: "Forestry Reserve & Conservation | Preserving Our Living Legacy",
   description:
-    "Join us in our mission to secure a sustainable future. Empowering communities, protecting nature.",
+    "Dedicated to preserving the world's forests, rehabilitating ecosystems, and fostering a deep connection between humanity and the woods.",
 };
 
 export default function HomePage() {

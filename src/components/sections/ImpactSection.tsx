@@ -1,16 +1,48 @@
-'use client';
+"use client";
 
-import { motion, useInView, animate } from 'framer-motion';
-import { useRef, useEffect } from 'react';
+import { motion, useInView, animate } from "framer-motion";
+import { useRef, useEffect } from "react";
 
 const stats = [
-  { id: 1, value: 500, suffix: 'K+', label: 'Households Helped', text: 'Empowering families with education and food security.' },
-  { id: 2, value: 25, suffix: 'K+', label: 'Students Integrated', text: 'Pathways back to formal education for working children.' },
-  { id: 3, value: 5000, suffix: '+', label: 'Tons Food Distributed', text: 'Delivering bio-fortified high zinc rice to communities.' },
-  { id: 4, value: 10000, suffix: '+', label: 'Hectares Protected', text: 'Coastal and rainforest restoration initiatives.' },
+  {
+    id: 1,
+    value: 10,
+    suffix: "M+",
+    label: "Trees Planted",
+    text: "Reforesting degraded landscapes across the globe.",
+  },
+  {
+    id: 2,
+    value: 50,
+    suffix: "K+",
+    label: "Acres Protected",
+    text: "Securing critical habitats from urban expansion.",
+  },
+  {
+    id: 3,
+    value: 2500,
+    suffix: "+",
+    label: "Species Monitored",
+    text: "Tracking biodiversity health in our protected zones.",
+  },
+  {
+    id: 4,
+    value: 100,
+    suffix: "K+",
+    label: "Seeds Distributed",
+    text: "Empowering local communities to grow their own woods.",
+  },
 ];
 
-function Counter({ from = 0, to, suffix }: { from?: number; to: number; suffix: string }) {
+function Counter({
+  from = 0,
+  to,
+  suffix,
+}: {
+  from?: number;
+  to: number;
+  suffix: string;
+}) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, amount: 0.5 });
 
@@ -21,7 +53,7 @@ function Counter({ from = 0, to, suffix }: { from?: number; to: number; suffix: 
 
     const controls = animate(from, to, {
       duration: 2,
-      ease: 'easeOut',
+      ease: "easeOut",
       onUpdate: (value) => {
         node.textContent = Math.round(value) + suffix;
       },
@@ -30,7 +62,15 @@ function Counter({ from = 0, to, suffix }: { from?: number; to: number; suffix: 
     return controls.stop;
   }, [from, to, inView, suffix]);
 
-  return <span ref={ref} className="font-heading font-bold text-5xl md:text-6xl text-hope mb-2 block">{from}{suffix}</span>;
+  return (
+    <span
+      ref={ref}
+      className="font-heading font-bold text-5xl md:text-6xl text-hope mb-2 block"
+    >
+      {from}
+      {suffix}
+    </span>
+  );
 }
 
 export function ImpactSection() {
@@ -41,7 +81,7 @@ export function ImpactSection() {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -49,7 +89,7 @@ export function ImpactSection() {
           >
             Our Impact
           </motion.p>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -70,8 +110,12 @@ export function ImpactSection() {
               className="flex flex-col items-center text-center p-6 bg-card rounded-2xl border border-border shadow-sm hover:shadow-md transition-shadow"
             >
               <Counter to={stat.value} suffix={stat.suffix} />
-              <h3 className="text-xl font-bold font-heading text-foreground mb-2 mt-4">{stat.label}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">{stat.text}</p>
+              <h3 className="text-xl font-bold font-heading text-foreground mb-2 mt-4">
+                {stat.label}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {stat.text}
+              </p>
             </motion.div>
           ))}
         </div>

@@ -83,7 +83,7 @@ export function HeroSection() {
         >
           <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
           <span className="text-sm font-medium text-white/90 uppercase tracking-widest">
-            Global Nature Conservation
+            Sustainable Forest Conservation
           </span>
         </motion.div>
 
@@ -93,9 +93,9 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-heading text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter text-white mb-6 leading-[0.9] max-w-6xl text-balance"
         >
-          Your contribution today can{" "}
+          Preserving the lungs of the earth{" "}
           <span className="text-gradient from-primary via-green-300 to-primary select-none">
-            change life tomorrow
+            for generations
           </span>
         </motion.h1>
 
@@ -105,9 +105,9 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="font-sans text-lg md:text-2xl text-white/70 max-w-3xl mb-12 leading-relaxed"
         >
-          Green The Environment (GTE) is a non-profit organization dedicated to
-          building a sustainable future. Empowering communities and protecting
-          the natural world through innovative climate and social programs.
+          Forestry Reserve is dedicated to preserving the world's forests,
+          rehabilitating ecosystems, and fostering a deep connection between
+          humanity and the woods through innovative conservation programs.
         </motion.p>
 
         <motion.div

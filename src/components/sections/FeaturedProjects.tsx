@@ -44,10 +44,11 @@ export function FeaturedProjects() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-xl">
             <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4">
-              Urgent Actions, Real Results.
+              Restoring Nature, Piece by Piece.
             </h2>
             <p className="text-muted-foreground text-lg">
-              Explore our ongoing campaigns turning crisis into hope globally.
+              Explore our current conservation efforts to protect and expand our
+              global forests.
             </p>
           </div>
           <Link

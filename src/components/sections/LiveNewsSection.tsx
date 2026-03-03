@@ -91,11 +91,11 @@ export function LiveNewsSection() {
               </span>
             </div>
             <h2 className="text-4xl md:text-6xl font-heading font-extrabold tracking-tighter text-foreground mb-6">
-              Green & Community <span className="text-primary">Insights</span>
+              Forestry & Wildlife <span className="text-primary">Insights</span>
             </h2>
             <p className="max-w-xl text-lg text-muted-foreground font-sans leading-relaxed">
-              Stay updated with the latest headlines and environmental stories
-              across Bangladesh. Real-time updates from trusted sources.
+              Stay updated with the latest headlines and ecological stories from
+              across the globe. Real-time updates from trusted nature sources.
             </p>
           </motion.div>
 

@@ -14,13 +14,13 @@ export function Footer() {
                 <Leaf className="w-5 h-5 text-primary" />
               </div>
               <span className="font-heading font-bold text-xl tracking-tight">
-                Green The Environment
+                Forestry Reserve
               </span>
             </Link>
             <p className="text-muted-foreground text-sm font-sans leading-relaxed">
-              Green The Environment (GTE) is a non-profit organization dedicated
-              to building a sustainable future. Empowering communities,
-              protecting nature.
+              Forestry Reserve is a dedicated organization focused on preserving
+              the world's forests, rehabilitating ecosystems, and fostering a
+              deep connection between humanity and the woods.
             </p>
             <div className="flex gap-4">
               <Button
@@ -30,7 +30,7 @@ export function Footer() {
                 asChild
               >
                 <a
-                  href="https://x.com/greente1999"
+                  href="https://x.com/forestry_demo"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -44,7 +44,7 @@ export function Footer() {
                 asChild
               >
                 <a
-                  href="https://www.instagram.com/green19992024"
+                  href="https://www.instagram.com/forestry_demo"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -58,7 +58,7 @@ export function Footer() {
                 asChild
               >
                 <a
-                  href="https://www.facebook.com/profile.php?id=61567323064238"
+                  href="https://www.linkedin.com/company/forestry-demo"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -68,10 +68,9 @@ export function Footer() {
             </div>
             <div className="text-xs text-muted-foreground pt-4 border-t space-y-2">
               <p>
-                House# 14, Road# 12, PC Culture Housing Society, Block: Kha,
-                Shekhertek, Adabor, Mohammadpur, Dhaka-1207 Bangladesh
+                123 Pine Forest Way, Evergreen Valley, OR 97401, United States
               </p>
-              <p>Email: Info@greentheenvironment.org</p>
+              <p>Email: hello@forestryreserve.demo</p>
             </div>
           </div>
 
@@ -176,7 +175,7 @@ export function Footer() {
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-muted-foreground">
           <p>
             © {new Date().getFullYear()} All rights reserved by Jubair Ibn
-            Khaled.
+            Khaled
           </p>
           <div className="flex gap-6">
             <Link
